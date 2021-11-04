@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/battery', function () {
-    return view('battery');
+Route::get('/notification', function () {
+    return view('notification');
 });
