@@ -25,7 +25,7 @@
         </div>
         </div>
     </nav>
-    <div class="container mt-5 mb-5">
+    <div class="container my-5">
         <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
             <div class="card text-white rounded-3 bg-kereta" style="background-color: #1D67B0;">
                 <div class="card-header" style="background-color: #F08200;">

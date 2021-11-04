@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/notification', function () {
     return view('notification');
 });
+
+Route::get('/battery', function () {
+    return view('battery');
+});
