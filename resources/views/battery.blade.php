@@ -27,7 +27,7 @@
     </nav>
     <div class="container my-5 bg-light rounded-3">
         <div class="p-4">
-            <button class="btn text-white px-4" style="background-color: #1D67B0;"><i class="fas fa-chevron-left"></i> Back</button>
+            <a href="/" class="btn active text-white px-4" style="background-color: #1D67B0;" role="button" aria-pressed="true"><i class="fas fa-chevron-left"></i> Back</a>
         </div>
         <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3 p-4">
             <div class="col">
