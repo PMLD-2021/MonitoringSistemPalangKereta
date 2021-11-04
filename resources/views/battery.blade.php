@@ -19,7 +19,7 @@
         <div class="container-fluid">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item p-1">
-                    <a class="nav-link active text-white" href="#"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
+                    <a class="nav-link active text-white" href="/"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
                 </li>
             </ul>
         </div>
