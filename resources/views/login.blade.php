@@ -41,7 +41,7 @@
                                 </label>
                             </div>
                             <div class="d-grid">
-                                <button class="btn btn-primary btn-login btn-lg" type="submit">Login</button>
+                                <a href="/home" class="btn btn-primary btn-login btn-lg" type="submit">Login</a>
                             </div>
                         </form>
                     </div>
