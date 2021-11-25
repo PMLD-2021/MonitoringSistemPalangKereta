@@ -16,13 +16,15 @@
 
 <body style="background-color: #E5E5E5;">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F08200;">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="container d-flex justify-content-end">
+            <ul class="navbar-nav">
                 <li class="nav-item p-1">
-                    <a class="nav-link active text-white" href="/login"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
+                    <a class="nav-link active text-white" href="/"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link active text-white" href="/">Notification</a>
                 </li>
             </ul>
-        </div>
         </div>
     </nav>
     <div class="container my-5 bg-light rounded-3">

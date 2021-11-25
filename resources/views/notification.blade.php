@@ -16,13 +16,15 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F08200;">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="container d-flex justify-content-end">
+            <ul class="navbar-nav">
                 <li class="nav-item p-1">
-                    <a class="nav-link active text-white" href="#"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
+                    <a class="nav-link active text-white" href="/"><i class="fas fa-door-open fa-lg"></i> Sign Out</a>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link active text-white" href="/">Notification</a>
                 </li>
             </ul>
-        </div>
         </div>
     </nav>
     <div class="container my-5">
@@ -34,7 +36,7 @@
                             <h3>Notification</h3>
                         </div>
                         <div class="col-2">
-                            <button class="btn text-white text-end" type="button"><i class="fas fa-home fa-2x"></i></button>
+                            <a class="nav-link active text-white" href="/home"><i class="fas fa-home fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
