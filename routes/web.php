@@ -19,6 +19,7 @@ use App\Http\Controllers\NotificationController;
 */
 
 Route::get('/', [LoginController::class, 'index']);
+Route::post('/', [LoginController::class, 'authenticate']);
 
 Route::get('/home', [HomeController::class, 'index']);
 

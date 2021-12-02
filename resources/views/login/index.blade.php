@@ -9,6 +9,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
+
+    @if(session()->has('loginError'))
+    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+        {{ session('loginError') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
     <div class="row">
         <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
             <div class="card border-0 shadow rounded-3 my-5">
@@ -16,18 +23,24 @@
                     <div class="text-center mb-4" style="color: #F08200;">
                         <i class="fas fa-user-circle fa-5x"></i>
                     </div>
-                    <form>
+                    <form action="/" method="post">
+                        @csrf
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Username">
-                            <label for="floatingInput">Username</label>
+                            <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username" autofocus required value="{{ old ('username') }}">
+                            <label for="username">Username</label>
+                            @error('username')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                            <label for="password">Password</label>
                         </div>
 
                         <div class="d-grid">
-                            <a href="/home" class="btn btn-primary btn-login btn-lg" type="submit">Login</a>
+                            <button class="btn btn-primary btn-lg" type="submit">Login</button>
                         </div>
                     </form>
                     <small class="d-block text-center mt-3">Not registered? <a href="/register">Register Now!</a></small>
