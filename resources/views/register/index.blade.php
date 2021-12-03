@@ -3,6 +3,7 @@
 @section('container')
 <div class="container">
     <h1 class="text-center mt-5">Account Registration</h1>
+    <small class="d-block text-center">Monitoring Sistem Palang Kereta Api</small>
     <div class="row">
         <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
             <div class="card border-0 shadow rounded-3 my-5">
