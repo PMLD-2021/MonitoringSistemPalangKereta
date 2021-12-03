@@ -18,14 +18,15 @@ use App\Http\Controllers\NotificationController;
 |
 */
 
-Route::get('/', [LoginController::class, 'index']);
+Route::get('/', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index'])->middleware('auth');
 
-Route::get('/notification', [NotificationController::class, 'index']);
+Route::get('/notification', [NotificationController::class, 'index'])->middleware('auth');
 
-Route::get('/battery', [BatteryController::class, 'index']);
+Route::get('/battery', [BatteryController::class, 'index'])->middleware('auth');
 
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
